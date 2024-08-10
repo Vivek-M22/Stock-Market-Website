@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+    .navBar{
+        border: 1px solid blue;
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+       justify-content: space-around;
+        align-items: center;
+
+        img{
+            height: 5rem;
+            width: 10rem;
+        }
+
+        .navcontent{
+            /* border: 1px solid; */
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            a{
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    .formSection{
+        width: 100%;
+        height: 800px;
+        border: 1px solid red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ContactSection{
+        width: 100%;
+        border: 1px solid green;
+        height: 2rem;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    }
+
+    .About{
+        border: 1px solid blue;
+        width: 100%;
+        height: 800px;
+        padding: 3rem;
+
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .options{
+
+            /* border: 1px solid black; */
+            height: 50%;
+            width: 75%;
+           
+            /* display: grid; */
+            /* grid-template-rows: repeat(1,1fr) ;
+            grid-template-columns: repeat(5,1fr) ; */
+            /* grid-template-columns: repeat(auto-fit, minmax(200px, 300px)); */
+            
+            gap: 2rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .item{
+                border: 1px solid orange;
+                border-radius: 1rem;
+                max-width: 250px;
+                width: 30rem;
+                height: 15rem;
+
+                display: flex;
+                /* justify-content: center; */
+                align-items: center;
+
+                box-shadow: 1px 1px 5px black;
+            }
+
+            #one{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                .images{
+                    /* border: 1px solid black; */
+                    height: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+                img{
+                   height: 5rem;
+                   width: 5rem;
+                   /* border: 1px solid; */
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    /* border: 1px solid; */
+                    text-align: center;
+                    padding: 1rem;
+                }
+
+                transition: all 0.2s linear 0s;
+                /* for smooth transition */
+            }
+
+            #one:hover{
+                transform: scale(1.04);
+            }
+
+        }
+    }
+
+    .Services{
+        border: 1px solid;
+        width: 100%;
+        height: 300px;
+
+        h2{ 
+            
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .options{
+            border: 1px solid black;
+            height: 50%;
+           
+            display: grid;
+            grid-template-rows: repeat(1,1fr) ;
+            grid-template-columns: repeat(5,1fr) ;
+            gap: 4rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item{
+                border: 1px solid orange;
+                width: 100px;
+                height: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+
+    .Review{
+        border: 1px solid red;
+        width: 100%;
+        height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
+}
